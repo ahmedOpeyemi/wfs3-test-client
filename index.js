@@ -43,3 +43,19 @@ describe('General requirements', () => {
             })
     })
 })
+
+describe('Support for generic clients', () => {
+    it('The server SHALL support the HTTP GET operation at the path /api/conformance', (done) => {
+        const requiredFields = {
+            conformsToField: 'conformsTo'
+        }
+        chai.request(BASE_URL)
+            .get(ENDPOINTS.conformance)
+            .end((err, res) => {
+                expect(res).to.have.status(200)
+                expect(res.body).to.have.property(requiredFields.conformsToField)
+                expect(res.body[requiredFields.conformsToField]).to.be.instanceof(Array)
+                done()
+            })
+    })
+})

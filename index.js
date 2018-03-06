@@ -14,7 +14,7 @@ const linkSchema = require('./schemas/json/link.json')
 
 const BASE_URL = 'https://www.ldproxy.nrw.de/topographie'
 const ENDPOINTS = {
-    apiDefintion: '/api/?f=json',
+    apiDefintion: '/api/', // TODO: Backslach currently added due to the exception from server. Spec recommends: /api
     conformance: '/api/conformance'
 }
 

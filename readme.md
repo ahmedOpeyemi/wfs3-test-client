@@ -1,0 +1,2 @@
+## [WIP] Javascript client testing servers implementing WFS 3.0 spec
+Javascript client with test suites + cases testing the implementation of the requirements (and recommendations) from [OGC Web Feature Service 3.0 - Part 1: Core document](https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html)
